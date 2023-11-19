@@ -1,28 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch-a-Sketch</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <header>
         <h1>Virtual Etch-a-Sketch</h1>
     </header>
-    <main>
-        <div id="etch-a-sketch">
-            <!-- The grid will be populated with JS -->
-        </div>
-        <div class="controls">
+    <div class="container">
+        <aside class="sidebar">
+            <!-- Sidebar with buttons -->
             <button id="clear-btn">Clear</button>
-            <!-- Additional buttons can be added here -->
-        </div>
-    </main>
+            <!-- Other buttons can be added here -->
+        </aside>
+        <main>
+            <div id="etch-a-sketch">
+                <!-- The grid will be populated with JS -->
+            </div>
+        </main>
+        <aside class="sidebar right-sidebar">
+            <!-- Right sidebar content (if any) or leave it empty -->
+        </aside>
+    </div>
     <footer>
         <p>Created for the Odin Project</p>
     </footer>
     <script src="js/script.js"></script>
 </body>
-</html>
 
+</html>
