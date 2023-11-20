@@ -1,9 +1,8 @@
-html, body {
-
+/* html, body {
     height: 100%;
     margin: 0;
+} */
 
-}
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
@@ -21,6 +20,7 @@ header {
 .container {
     display: flex;
     flex-grow: 1;
+    padding: 10px;
 }
 
 .sidebar {
@@ -29,10 +29,10 @@ header {
     padding: 10px;
     box-sizing: border-box;
 }
-
-.right-sidebar {
-    /* If you don't need it, you can simply not display it */
-    display: none;
+.left-sidebar {
+    display: flex;
+    flex-direction: column;
+    
 }
 
 main {
@@ -46,8 +46,8 @@ main {
 
 #etch-a-sketch {
 
-    width: 400px;
-    height: 400px;
+    width: 500px;
+    height: 500px;
     border: 5px solid black;
     display: grid;
     grid-template-columns: repeat(20, 1fr); /* 20x20 grid */
@@ -59,8 +59,8 @@ main {
 }
 
 button {
-    padding: 10px 15px;
-    margin-right: 10px;
+    padding: 10px;
+    /* margin-right: 10px; */
     background-color: #ff5555;
     color: white;
     border: none;
@@ -79,4 +79,45 @@ footer {
     
 }
 
-/* Add additional styling as needed */
+/* For desktop: */
+@media screen and (min-width: 769px) {
+    .container {
+        padding: 10px;
+    }
+    .sidebar {
+        width: 150px;
+    }
+    #etch-a-sketch {
+        width: 500px;
+        height: 500px;
+    }
+}
+
+/* For tablets: */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .container {
+        padding: 5px;
+    }
+    .sidebar {
+        width: 100px;
+    }
+    #etch-a-sketch {
+        width: 350px;
+        height: 350px;
+    }
+}
+
+/* For mobile phones: */
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 2px;
+    }
+    .sidebar {
+        width: 75px;
+    }
+    #etch-a-sketch {
+        width: 300px;
+        height: 300px;
+    }
+}
+
