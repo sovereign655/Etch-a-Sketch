@@ -17,6 +17,22 @@
             <!-- Sidebar with buttons -->
             <button id="clear-btn">Clear</button>
             <!-- Other buttons can be added here -->
+            <p>Select a Color:</p>
+            <select id="color-dropdown">
+                <option value="rgb(0, 0, 0)">black</option>
+                <option value="rgb(0, 0, 255)">ocean</option>
+                <option value="rgb(255, 0, 0)">sunshine</option>
+                <option value="rgb(0, 255, 0)">forest</option>
+                <option value="rgb(255, 255, 255)">erase</option>
+            </select>
+            <p id="Coordinate">Coordinate: [0,0]</p>
+            <p>Select a grid-size:</p>
+            <select id="gridsize-dropdown">
+                <option value=20>20x20 grid</option>
+                <option value=35>35x35 grid</option>
+                <option value=50>50x50 grid</option>
+            </select>
+            
         </aside>
         <main>
             <div id="etch-a-sketch">
@@ -28,7 +44,7 @@
         </aside>
     </div>
     <footer>
-        <p>Created for the Odin Project</p>
+        <p>Made by: <a href=https://github.com/sovereign655> <img id="gh-logo" src="img\github-mark\github-mark.png" alt="github logo"/> Conroy McDonald</a></p>
     </footer>
     <script src="js/script.js"></script>
 </body>
